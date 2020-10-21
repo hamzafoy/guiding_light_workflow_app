@@ -1,9 +1,8 @@
 let randomAyat = Math.floor((Math.random() * 6235) + 1);
 const url = `http://api.alquran.cloud/v1/ayah/${randomAyat}/editions/quran-uthmani,en.sahih`;
-const zipcode = 40220;
-const carKey = require('./carKeys');
-let apiKey = carKey.getKey();
-const url_weather = `https://api.openweathermap.org/data/2.5/weather?zip=${zipcode},us&units=imperial&APPID=${apiKey}`;
+const zipcode = 40218;
+import { openWeatherAPIKey } from './carKeys.js';
+const url_weather = `https://api.openweathermap.org/data/2.5/weather?zip=${zipcode},us&units=imperial&APPID=${openWeatherAPIKey}`;
 
 async function getAyat() {
     try {
