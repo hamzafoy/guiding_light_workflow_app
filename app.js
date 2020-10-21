@@ -1,6 +1,6 @@
 let randomAyat = Math.floor((Math.random() * 6235) + 1);
 const url = `http://api.alquran.cloud/v1/ayah/${randomAyat}/editions/quran-uthmani,en.sahih`;
-const zipcode = 40218;
+const zipcode = 40220;
 import { openWeatherAPIKey } from './carKeys.js';
 const url_weather = `https://api.openweathermap.org/data/2.5/weather?zip=${zipcode},us&units=imperial&APPID=${openWeatherAPIKey}`;
 
@@ -29,6 +29,21 @@ function fixWeatherReading(zipcode, temperature, weather, city) {
     return message;
 }
 
+function getTime() {
+    let clockFace = document.getElementById('currentTime');
+    let currentTime = new Date();
+    let hourOfDay = currentTime.getHours();
+    let am_or_pm = (hourOfDay < 12 ? "AM" : "PM");
+    hourOfDay = (hourOfDay < 10 ? "0" : "") + hourOfDay;
+    hourOfDay = (hourOfDay > 12) ? hourOfDay - 12 : hourOfDay;
+    hourOfDay = (hourOfDay == 0) ? "12" : hourOfDay;
+    let minuteOfDay = currentTime.getMinutes();
+    minuteOfDay = (minuteOfDay < 10 ? "0" : "") + minuteOfDay;
+    let timeOfDay = `${hourOfDay}:${minuteOfDay} ${am_or_pm}`;
+    clockFace.innerHTML = timeOfDay;
+};
+
+
 async function getWeather() {
     try {
         let response = await fetch(url_weather);
@@ -43,3 +58,5 @@ async function getWeather() {
 
 getAyat();
 getWeather();
+getTime();
+setInterval(getTime, 1000);
