@@ -1,3 +1,7 @@
+body {
+
+}
+
 h2 {
     font-weight: normal;
 }
@@ -10,9 +14,9 @@ h2 {
     background-color: #a0c1b8;
     border: 2px #709fb0 solid;
     outline: 1px green solid;
-    font-size: 0.95em;
+    font-size: 0.8em;
     padding: 6px 0;
-    margin: 0 10%;
+    margin: 0 5%;
 }
 
 #quotesLabel,
@@ -20,7 +24,8 @@ h2 {
 #islamicQuoteTranslation,
 #weatherInLouisville h1,
 #weatherForecast,
-#currentTime {
+#currentTime,
+#currentDateToday {
     text-align: center;
     color: white;
 }
@@ -29,7 +34,8 @@ h2 {
 #islamicQuoteTranslation,
 #weatherInLouisville h1,
 #weatherForecast,
-#currentTime {
+#currentTime,
+#currentDateToday {
     font-family: BioRhyme-Light;
     font-weight: normal;
 }
@@ -45,6 +51,7 @@ h2 {
     padding: 0 20%;
 }
 
-#currentTime {
+#currentTime,
+#currentDateToday {
     padding-bottom: 10px;
 }
