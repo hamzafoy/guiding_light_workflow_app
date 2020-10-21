@@ -1,0 +1,44 @@
+h2 {
+    font-weight: normal;
+}
+
+@font-face {font-family: "Amiri-Regular"; src: url("fonts/Amiri-Regular.ttf"); }
+@font-face {font-family: "BioRhyme-Light"; src: url("fonts/BioRhyme-Light.ttf"); }
+
+#quotes,
+#weatherInLouisville {
+    background-color: #a0c1b8;
+    border: 2px #709fb0 solid;
+    outline: 1px green solid;
+    font-size: 0.95em;
+    padding: 6px 0;
+    margin: 0 10%;
+}
+
+#quotesLabel,
+#islamicQuotes,
+#islamicQuoteTranslation,
+#weatherInLouisville h1,
+#weatherForecast {
+    text-align: center;
+    color: white;
+}
+
+#quotesLabel,
+#islamicQuoteTranslation,
+#weatherInLouisville h1,
+#weatherForecast {
+    font-family: BioRhyme-Light;
+    font-weight: normal;
+}
+
+#islamicQuotes {
+    font-family: Amiri-Regular;
+    font-weight: normal;
+    padding: 0 5%;
+}
+
+#islamicQuoteTranslation {
+    font-size: 0.5em;
+    padding: 0 20%;
+}
