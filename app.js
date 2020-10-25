@@ -88,12 +88,13 @@ async function getHijri() {
         let day = currentTime.getDay();
         let dayToday = daysOfTheWeek[`${day}`];
         let month = currentTime.getMonth();
+        let fixedMonthHijri = month + 1;
         let monthToday = months[`${month}`];
         let dateToday = currentTime.getDate();
         let yearToday = currentTime.getFullYear();
         let dateMessage = `Today is ${dayToday}, ${monthToday} ${dateToday} ${yearToday}`;
         
-        let url_hijri = `http://api.aladhan.com/v1/gToH?date=21-10-2020`
+        let url_hijri = `http://api.aladhan.com/v1/gToH?date=${dateToday}-${fixedMonthHijri}-${yearToday}`
         let response = await fetch(url_hijri);
         let hijriDateToday = await response.json();
         let currentHijri = `${hijriDateToday.data.hijri.month.en} ${hijriDateToday.data.hijri.day}, ${hijriDateToday.data.hijri.year} AH`;
