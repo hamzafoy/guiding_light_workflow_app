@@ -27,6 +27,7 @@
 
     </div>
 
+    <section id ="flex_section">
     <div id="weatherInLouisville">
 
         <h1>Current Weather in Louisville, KY</h1>
@@ -47,8 +48,35 @@
 
     </div>
 
+    <div id="taskWhiteboard">
+
+        <h1>Task Board</h1>
+
+        <p>Add tasks by entering text in the textbox and either hitting ENTER or clicking 'Assign Task'.
+        </br>
+        All regular tasks are in white, all important tasks are in orange, all critical tasks are in red.
+        </br>
+        You can click 'Emphasize' on any task once to make it important, double-click it to make it critical.
+        </p>
+
+        <form id="tasks_form">
+            <input type="text" id="task_entry" placeholder="Add a task here. . .">
+            <button type="submit" id="add_task">Create Task &#10004;</button>
+        </form>
+
+        <ul id="tasks_list">
+            <li class="task">
+                Doppelganger or a Decoy, who knows?
+                <button id="edit_task">Edit &#9998;</button>
+                <button id="delete_task">Delete &#10008;</button>
+                <button id="increase_importance">Emphasize &#10169;</button>
+            </li>
+        </ul>
+    </div>
+</section>
+
     <script src="carKeys.js" type="module"></script>
-    <script src="app.js" type="module"></script>
+    <script src="test.js" type="module"></script>
 </body>
 
 </html>

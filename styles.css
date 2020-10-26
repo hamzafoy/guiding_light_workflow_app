@@ -1,5 +1,8 @@
 body {
-
+    background-image: url("img/islamic_wallpaper_3.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h2 {
@@ -9,14 +12,29 @@ h2 {
 @font-face {font-family: "Amiri-Regular"; src: url("fonts/Amiri-Regular.ttf"); }
 @font-face {font-family: "BioRhyme-Light"; src: url("fonts/BioRhyme-Light.ttf"); }
 
-#quotes,
-#weatherInLouisville {
+#quotes {
     background-color: #a0c1b8;
     border: 2px #709fb0 solid;
     outline: 1px green solid;
     font-size: 0.8em;
-    padding: 6px 0;
-    margin: 0 5%;
+    padding-bottom: 6px;
+    
+}
+
+#weatherInLouisville,
+#taskWhiteboard {
+    background-color: #a0c1b8;
+    border: 2px #709fb0 solid;
+    outline: 1px green solid;
+    font-size: 0.8em;
+    padding-bottom: 6px;
+    flex-grow: 1;
+}
+
+#flex_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #quotesLabel,
@@ -25,9 +43,14 @@ h2 {
 #weatherInLouisville h1,
 #weatherForecast,
 #currentTime,
-#currentDateToday {
+#currentDateToday,
+#taskWhiteboard h1,
+#taskWhiteboard p,
+#taskWhiteboard form,
+#taskWhiteboard ul {
     text-align: center;
     color: white;
+    list-style-type: none;
 }
 
 #quotesLabel,
@@ -35,7 +58,9 @@ h2 {
 #weatherInLouisville h1,
 #weatherForecast,
 #currentTime,
-#currentDateToday {
+#currentDateToday,
+#taskWhiteboard h1,
+#taskWhiteboard p {
     font-family: BioRhyme-Light;
     font-weight: normal;
 }
@@ -54,4 +79,17 @@ h2 {
 #currentTime,
 #currentDateToday {
     padding-bottom: 10px;
+}
+
+#taskWhiteboard p {
+    font-size: 0.8em;
+}
+
+#tasks_list li {
+    text-align: left;
+}
+
+#tasks_list button {
+    background-color: purple;
+    color: white;
 }

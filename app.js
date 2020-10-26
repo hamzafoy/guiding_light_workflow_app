@@ -104,6 +104,53 @@ async function getHijri() {
     }
 }
 
+let task_input = document.getElementById('task_entry');
+let tasks_ul = document.getElementById('tasks_list');
+const add_task = document.getElementById('add_task');
+let delete_task = document.getElementById('delete_task');
+
+add_task.addEventListener('click', (e) => {
+    e.preventDefault();
+    let li = document.createElement('li');
+    let ul = document.getElementById('tasks_list');
+    let isTaskInputEmpty = (task_input.value == "") ? true : false;
+    li.textContent = task_input.value;
+    li.innerHTML += ` <button id="edit_task">Edit &#9998;</button> <button id="delete_task">Delete &#10008;</button> <button id="increase_importance">Emphasize &#10169;</button>`;
+    isTaskInputEmpty === true ? alert("You cannot create a task that is empty!") : ul.appendChild(li);
+    task_input.value = "";
+});
+
+tasks_ul.addEventListener('click', (e) => {
+    let li = e.target.parentNode;
+    let li_id = e.target.id;
+    let ul = document.getElementById('tasks_list');
+    let isButtonForRemoving = (li_id == 'delete_task') ? true : false;
+    let isButtonForEditing = (li_id == 'edit_task') ? true : false;
+    let isButtonForEmphasis = (li_id == 'increase_importance') ? true : false;
+    isButtonForRemoving ? ul.removeChild(li) : console.log('I am about to block you like Ben Wallace!');
+    if (isButtonForEmphasis === true && li.style.color != "orange" && li.style.color != "red") {
+        li.style.color = "orange";
+    } else {
+        li.style.color = "white";
+    };
+    if (isButtonForEditing === true) {
+        li.textContent = prompt("Correct the text here");
+        li.innerHTML += ` <button id="edit_task">Edit &#9998;</button> <button id="delete_task">Delete &#10008;</button> <button id="increase_importance">Emphasize &#10169;</button>`;
+    };
+});
+
+tasks_ul.addEventListener('dblclick', (e) => {
+    let li = e.target.parentNode;
+    let li_id = e.target.id;
+    let ul = document.getElementById('tasks_list');
+    let isButtonForEmphasis = (li_id == 'increase_importance') ? true : false;
+    if (isButtonForEmphasis === true && li.style.color != "red") {
+        li.style.color = "red";
+    } else {
+        li.style.color = "white";
+    };
+});
+
 getHijri();
 getAyat();
 getWeather();
