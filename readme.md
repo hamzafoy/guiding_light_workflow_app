@@ -4,21 +4,20 @@
 
 ## Description
 
-*Young Leaders Academy* is a daycare based in the West Buechel neighborhood in Louisville, KY. This website contains comprehensive and easily accessible information pertaining to the daycare, its facilities for prospective parents/clients, its tuition rates, its policies & forms, and contact and location information.
+*AZM App* is an application programmed in JavaScript. The intention behind this application is to create a workflow application tailored for the board members at a local masjid (mosque) in Louisville, KY.
+This application contains a number of API calls including a call to the Alquran API (to fetch random verses and display them in a beautiful Arabic font courtesy of Google Fonts), a call to OpenWeatherMap API
+to find the current weather and temperature using the zipcode of Guiding Light Islamic Center, and a call to Aladhan API to convert the current Gregorian calendar date to current Hijri/Islamic calendar date.
+**This application is also my capstone project for Code Louisville's September JS course.**
 
 ## Code Louisville Basic & Optional Requirements
-
-  Visit **[Young Leaders Academy](https://hamzafoy.github.io)** to find my project.
 
 <br>
 
 | **Capstone Requirement**            | **Code & Execution**                                                                                                                                |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | *Responsive per Viewport Width*   | View `@media (min-width: 699px)` in **Line 609** & `@media (min-width: 1110px)` in **Line 1147**.                                                           |
-| *3+ Custom CSS Elements*          | View the **style.css** file.                                                                                                                        |
-| *JavaScript on Separate File*     | View the **script.js** file.                                                                                                                        |
-| *Comments in Code*                | View comments throughout the **index.html**, **style.css**, & **script.js** files.                                                                          |
-| *Project on GitHub w/ 5+ Commits* | Visit [Ross "Hamza" Foy's Github](https://github.com/hamzafoy/hamzafoy.github.io), 40+ commits.                                                                                      |
+| *Readme File*                     | Readme.md can be found in this repo.                                                                          |
+| *Project on GitHub w/ 5+ Commits* | Visit [Ross "Hamza" Foy's Github](https://github.com/hamzafoy/azm_glic_app), 9 commits.                                                                                      |
 
 | **Optional Requirements** | **Code & Execution**                                                             |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
