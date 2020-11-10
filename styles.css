@@ -37,7 +37,7 @@ h2 {
 
 #flex_section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -116,4 +116,18 @@ h2 {
     background-color: purple;
     color: white;
     font-size: 0.60em !important;
+}
+
+/*---------------*/
+/*-Media Queries-*/
+/*---------------*/
+
+@media (min-width: 699px) {
+    
+#flex_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 }
