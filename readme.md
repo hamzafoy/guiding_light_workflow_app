@@ -15,12 +15,14 @@ to find the current weather and temperature using the zipcode of Guiding Light I
 
 | **Capstone Requirement**            | **Code & Execution**                                                                                                                                |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Responsive per Viewport Width*   | View `@media (min-width: 699px)` in **Line 125**.                                                           |
+| *Responsive per Viewport Width*   | View `@media (min-width: 699px)` in **Line 125** - The app changes layout depending on mobile or computer viewport.                   |
 | *Readme File*                     | Readme.md can be found in this repo.                                                                          |
 | *Project on GitHub w/ 5+ Commits* | Visit [Ross "Hamza" Foy's Github](https://github.com/hamzafoy/azm_glic_app), 13+ commits.                                                                                      |
 
 | **Optional Requirements** | **Code & Execution**                                                             |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Retrieve Data from external API*     | View `async function getAyat()` in **Line 7**, `async function getWeather()` in **Line 46**, & `async function getHijri()` in **Line 58**.                             |
-| *Create array, populate with multiple values, draw one to display*           | View `async function getHijri()`, specifically Lines **62 through 92**. |
-| *Create function taking 2 or more parameters and returns a new value*                   | View `function fixWeatherReading(zipcode, temperature, weather, city)` in **Line 22**.                      |
+| *Read & parse an external file & display some data*          | View `async function getAyat() {}` starting on **Line 17**.           |
+| *Retrieve Data from external API*     | View `async function getAyat()` on **Line 17**, `async function getWeather()` on **Line 74**, & `async function getHijri()` on **Line 116**.      |
+| *Create array, populate with multiple values, draw one to display*       | View `async function getHijri()`, specifically Lines **122 through 183**.  |
+| *Create function taking 2 or more parameters & returns a new value*   | View `function fixWeatherReading(zipcode, temperature, weather, city)` on **Line 96**.   |
+| *Implement a regex to test user input*   | View `let patternRegex = /^\s{1,}/;` & its subsequent use on lines **Line 209** to **Line 228**.   |
