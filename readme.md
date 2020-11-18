@@ -1,4 +1,6 @@
 # AZM App
+
+**Please note the following: This application is published on Surge for quick access and use by testers & Code Louisville Staff to grade the capstone project. You will find it here [AZM App Guiding Light Islamic Center Workflow App](http://azm-app.surge.sh/).**
   
 <br>
 
