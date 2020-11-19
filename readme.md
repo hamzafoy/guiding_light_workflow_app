@@ -1,6 +1,6 @@
 # AZM App
 
-**Please note the following: This application is published on Surge for quick access and use by testers & Code Louisville Staff to grade the capstone project. You will find it here [AZM App Guiding Light Islamic Center Workflow App](http://azm-app.surge.sh/).**
+**Instructions on how to run this application. Currently, this application can be run locally through localhost when files are pulled from the repo. Ensure that `dashboard.html` has `code_lou.js` in the script tag at the bottom as the `code_lou.js` contains the API key on that file so that the API calls are working properly.**
   
 <br>
 
@@ -28,3 +28,5 @@ to find the current weather and temperature using the zipcode of Guiding Light I
 | *Create array, populate with multiple values, draw one to display*       | View `async function getHijri()`, specifically Lines **122 through 183**.  |
 | *Create function taking 2 or more parameters & returns a new value*   | View `function fixWeatherReading(zipcode, temperature, weather, city)` on **Line 96**.   |
 | *Implement a regex to test user input*   | View `let patternRegex = /^\s{1,}/;` & its subsequent use on lines **Line 209** to **Line 228**.   |
+
+**Please note the following: This application is published on Surge at [AZM App Guiding Light Islamic Center Workflow App](http://azm-app.surge.sh/).**
