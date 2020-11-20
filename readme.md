@@ -1,5 +1,13 @@
 # Workflow App for Guiding Light Islamic Center
 
+<br>
+
+### Instructions for Running this Project
+
+1. **Step 1**: Download MAMP (local server environment) at [MAMP](https://www.mamp.info/en/downloads/).
+2. **Step 2**: Run MAMP and go to 'MAMP' on the menu bar and click 'Preferences'. Go to 'Web Server' on the Preferences Menu and 'Select' the Document Root to be on the root folder of my project file.
+3. **Step 3**: On your browser, type 'localhost' in your address bar and go to localhost which should open up the app directly with API calls working fine.
+
 **Instructions on how to run this application. Currently, this application can be run locally through localhost when files are pulled from the repo. I've used MAMP to generate a local server on my personal computer and use localhost to run my files locally. Ensure that `dashboard.html` has `code_lou.js` in the script tag at the bottom as the `code_lou.js` contains the API key on that file so that the API calls are working properly.**
   
 <br>
