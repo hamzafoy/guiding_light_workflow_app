@@ -1,6 +1,6 @@
-# AZM App
+# Workflow App for Guiding Light Islamic Center
 
-**Instructions on how to run this application. Currently, this application can be run locally through localhost when files are pulled from the repo. I've used MAMP to general a local server on my personal computer and you can use localhost with MAMP. Ensure that `dashboard.html` has `code_lou.js` in the script tag at the bottom as the `code_lou.js` contains the API key on that file so that the API calls are working properly.**
+**Instructions on how to run this application. Currently, this application can be run locally through localhost when files are pulled from the repo. I've used MAMP to generate a local server on my personal computer and use localhost to run my files locally. Ensure that `dashboard.html` has `code_lou.js` in the script tag at the bottom as the `code_lou.js` contains the API key on that file so that the API calls are working properly.**
   
 <br>
 
