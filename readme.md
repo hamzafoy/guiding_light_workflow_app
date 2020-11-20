@@ -11,11 +11,12 @@
   
 <br>
 
-## Description
+## Description & Features
 
 *AZM App* is an application programmed in JavaScript. The intention behind this application is to create a workflow application tailored for the board members at a local masjid (mosque) in Louisville, KY.
 This application contains a number of API calls including a call to the Alquran API (to fetch random verses and display them in a beautiful Arabic font courtesy of Google Fonts), a call to OpenWeatherMap API
-to find the current weather and temperature using the zipcode of Guiding Light Islamic Center, and a call to Aladhan API to convert the current Gregorian calendar date to current Hijri/Islamic calendar date.
+to find the current weather and temperature using the zipcode of Guiding Light Islamic Center, and a call to Aladhan API to convert the current Gregorian calendar date to current Hijri/Islamic calendar date for a general time & date display. This application also has a task manager in which you can add, delete, edit the text of tasks you've made and heighten their importance/emphasis.
+
 **This application is also my capstone project for Code Louisville's September JS course.**
 
 ## Code Louisville Basic & Optional Requirements
