@@ -1,40 +1,27 @@
-# Workflow App for Guiding Light Islamic Center
+# GuidingLightProductivity
 
-<br>
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
-### Instructions for Running this Project
+## Development server
 
-1. **Step 1**: Download MAMP (local server environment) at [MAMP](https://www.mamp.info/en/downloads/) & install MAMP.
-2. **Step 2**: Run MAMP and go to 'MAMP' on the menu bar and click 'Preferences'. Go to 'Web Server' on the Preferences Menu and 'Select' the Document Root to be on the root folder of my project file.
-3. **Step 3**: On your browser, type 'localhost' in your address bar and go to localhost which should open up the app directly with API calls working fine.
-3. **Step 3.1**: The .html file should have `code_lou.js` in the script tag at the bottom. `code_lou.js` has the API key inserted so that the async functions & API calls run smoothly.
-  
-<br>
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Description & Features
+## Code scaffolding
 
-*AZM App* is an application programmed in JavaScript. The intention behind this application is to create a workflow application tailored for the board members at a local masjid (mosque) in Louisville, KY.
-This application contains a number of API calls including a call to the Alquran API (to fetch random verses and display them in a beautiful Arabic font courtesy of Google Fonts), a call to OpenWeatherMap API
-to find the current weather and temperature using the zipcode of Guiding Light Islamic Center, and a call to Aladhan API to convert the current Gregorian calendar date to current Hijri/Islamic calendar date for a general time & date display. This application also has a task manager in which you can add, delete, edit the text of tasks you've made and heighten their importance/emphasis.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-**This application is also my capstone project for Code Louisville's September JS course.**
+## Build
 
-## Code Louisville Basic & Optional Requirements
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-<br>
+## Running unit tests
 
-| **Capstone Requirement**            | **Code & Execution**                                                                                                                                |
-|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Responsive per Viewport Width*   | View `@media (min-width: 699px)` in **Line 125** - The app changes layout depending on mobile or computer viewport.                   |
-| *Readme File*                     | Readme.md can be found in this repo.                                                                          |
-| *Project on GitHub w/ 5+ Commits* | Visit [Ross "Hamza" Foy's Github](https://github.com/hamzafoy/azm_glic_app), 13+ commits.                                                                                      |
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-| **Optional Requirements** | **Code & Execution**                                                             |
-|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Read & parse an external file & display some data*          | View `async function getAyat() {}` starting on **Line 17**.           |
-| *Retrieve Data from external API*     | View `async function getAyat()` on **Line 17**, `async function getWeather()` on **Line 74**, & `async function getHijri()` on **Line 116**.      |
-| *Create array, populate with multiple values, draw one to display*       | View `async function getHijri()`, specifically Lines **122 through 183**.  |
-| *Create function taking 2 or more parameters & returns a new value*   | View `function fixWeatherReading(zipcode, temperature, weather, city)` on **Line 96**.   |
-| *Implement a regex to test user input*   | View `let patternRegex = /^\s{1,}/;` & its subsequent use on lines **Line 209** to **Line 228**.   |
+## Running end-to-end tests
 
-**Please note the following: This application is published on Surge at [AZM App Guiding Light Islamic Center Workflow App](http://azm-app.surge.sh/).**
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
